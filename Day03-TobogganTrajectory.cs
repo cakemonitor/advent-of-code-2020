@@ -13,8 +13,6 @@ namespace advent_of_code_2020
 
     public static int CountTreesOnRoute(int across, int down)
     {
-      int mapHeight = map.Length;
-      int mapWidth = map[0].Length;
       int result = 0;
       int x = 0;
       int y = 0;

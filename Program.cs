@@ -6,7 +6,16 @@ namespace advent_of_code_2020
   {
     static void Main(string[] args)
     {
-      Day03();
+      Day04();
+    }
+
+    static void Day04()
+    {
+      PassportData.LoadFile("day4input.txt");
+      Console.WriteLine("Part 1 result: " + PassportData.CountValid());
+
+      PassportData.LoadFileStrict("day4input.txt");
+      Console.WriteLine("Part 2 result: " + PassportData.CountValid());
     }
 
     static void Day03()
