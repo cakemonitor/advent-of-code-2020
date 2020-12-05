@@ -6,7 +6,14 @@ namespace advent_of_code_2020
   {
     static void Main(string[] args)
     {
-      Day04();
+      Day05();
+    }
+
+    static void Day05()
+    {
+      BoardingPass.LoadFile("day5input.txt");
+      Console.WriteLine("Part 1 result: " + BoardingPass.HighestSeatID().ToString());
+      Console.WriteLine("Part 2 result: " + BoardingPass.MissingID().ToString());
     }
 
     static void Day04()
