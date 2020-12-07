@@ -14,7 +14,6 @@ namespace advent_of_code_2020
       StreamReader inputFile = new StreamReader(path);
       string line;
 
-      List<string> groupAnswers = new List<string>();
       while ((line = inputFile.ReadLine()) != null)
       {
 
