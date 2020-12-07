@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace advent_of_code_2020
 {
@@ -6,7 +7,14 @@ namespace advent_of_code_2020
   {
     static void Main(string[] args)
     {
-      Day06();
+      Day07();
+    }
+
+    static void Day07()
+    {
+      LuggageProcessing.LoadFile("day7input.txt");
+      Console.WriteLine("Part 1 result: " + LuggageProcessing.BagsTheContainShinyGoldBags().ToString());
+      Console.WriteLine("Part 2 result: " + LuggageProcessing.BagsInsideOf("shiny gold").ToString());
     }
 
     static void Day06()
