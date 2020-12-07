@@ -6,14 +6,23 @@ namespace advent_of_code_2020
   {
     static void Main(string[] args)
     {
-      Day05();
+      Day06();
+    }
+
+    static void Day06()
+    {
+      DeclarationForm.LoadFile("day6input.txt");
+      Console.WriteLine("Part 1 result: " + DeclarationForm.SumOfUniqueAnswersByGroup().ToString());
+      Console.WriteLine("Part 2 result: " + DeclarationForm.SumOfCommonAnswersByGroup().ToString());
     }
 
     static void Day05()
     {
-      BoardingPass.LoadFile("day5input.txt");
-      Console.WriteLine("Part 1 result: " + BoardingPass.HighestSeatID().ToString());
-      Console.WriteLine("Part 2 result: " + BoardingPass.MissingID().ToString());
+      // BoardingPass.LoadFile("day5input.txt");
+      // Console.WriteLine("Part 1 result: " + BoardingPass.HighestSeatID().ToString());
+      // Console.WriteLine("Part 2 result: " + BoardingPass.MissingID().ToString());
+      BoardingPassB.LoadFile("day5input.txt");
+      BoardingPassB.PrintHightestAndMissingSeatID();
     }
 
     static void Day04()
