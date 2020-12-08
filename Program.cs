@@ -7,7 +7,17 @@ namespace advent_of_code_2020
   {
     static void Main(string[] args)
     {
-      Day07();
+      Day08();
+    }
+
+
+    static void Day08()
+    {
+      GameConsole.LoadFile("day8input.txt");
+      GameConsole.RunProgram();
+      Console.WriteLine("Part 1 result: " + GameConsole.GetAccumulatorValue().ToString());
+      GameConsole.FixCorruptJmpOrNop();
+      Console.WriteLine("Part 2 result: " + GameConsole.GetAccumulatorValue().ToString());
     }
 
     static void Day07()
