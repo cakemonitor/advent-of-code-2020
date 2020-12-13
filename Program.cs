@@ -6,7 +6,14 @@ namespace advent_of_code_2020
   {
     static void Main(string[] args)
     {
-      Day12();
+      Day13();
+    }
+
+    static void Day13()
+    {
+      BusTimetable.LoadFile("day13input.txt");
+      Console.WriteLine("Part 1 result: " + BusTimetable.NextBusIdTimesMinutesWaiting().ToString());
+      Console.WriteLine("Part 2 result: " + BusTimetable.CompetitionResult().ToString());
     }
 
     static void Day12()
