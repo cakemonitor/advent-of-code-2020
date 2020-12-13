@@ -6,7 +6,16 @@ namespace advent_of_code_2020
   {
     static void Main(string[] args)
     {
-      Day11();
+      Day12();
+    }
+
+    static void Day12()
+    {
+      FerryControl.LoadFile("day12input.txt");
+      FerryControl.FollowNavInstructions();
+      Console.WriteLine("Part 1 result: " + FerryControl.ManhattenDistanceFromOrigin().ToString());
+      FerryControl.FollowWaypointInstructions();
+      Console.WriteLine("Part 2 result: " + FerryControl.ManhattenDistanceFromOrigin().ToString());
     }
 
     static void Day11()
