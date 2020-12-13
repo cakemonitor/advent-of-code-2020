@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace advent_of_code_2020
 {
@@ -7,7 +6,15 @@ namespace advent_of_code_2020
   {
     static void Main(string[] args)
     {
-      Day10();
+      Day11();
+    }
+
+    static void Day11()
+    {
+      Seating.LoadFile("day11input.txt");
+      Console.WriteLine("Part 1 result: " + Seating.SeatsOccupiedAfterRuleSettles(1).ToString());
+      Seating.LoadFile("day11input.txt");
+      Console.WriteLine("Part 1 result: " + Seating.SeatsOccupiedAfterRuleSettles(2).ToString());
     }
 
     static void Day10()
