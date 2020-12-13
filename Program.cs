@@ -7,9 +7,23 @@ namespace advent_of_code_2020
   {
     static void Main(string[] args)
     {
-      Day08();
+      Day10();
     }
 
+    static void Day10()
+    {
+      JoltageAdapter.LoadFile("dummy.txt");//day10input.txt");
+      Console.WriteLine("Part 1 result: " + JoltageAdapter.JoltCalculation().ToString());
+      //Console.WriteLine("Part 2 result: " + JoltageAdapter.AdapterCombos().ToString());
+    }
+
+    static void Day09()
+    {
+      SeatScreen.LoadFile("day9input.txt");
+      long exploitValue = SeatScreen.FirstValueWithoutSum25Property();
+      Console.WriteLine("Part 1 result: " + exploitValue.ToString());
+      Console.WriteLine("Part 2 result: " + SeatScreen.XmasWeakness(exploitValue).ToString());
+    }
 
     static void Day08()
     {
